@@ -1,0 +1,47 @@
+{
+	"schemaVersion": 1,
+	"id": "gold2",
+	"version": "${version}",
+	"name": "Gold 2",
+	"description": "Gold 2... I literally hate Minecraft's Code",
+	"authors": [
+		"Me!",
+		"Myself!",
+		"I",
+		"- Morty"
+	],
+	"contact": {
+		"homepage": "https://youtu.be/dQw4w9WgXcQ",
+		"sources": "https://github.com/MuddyMudalark/General"
+	},
+	"license": "MIT",
+	"icon": "assets/gold2/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.gold2.Gold2"
+		],
+		"client": [
+			"com.gold2.Gold2Client"
+		],
+		"fabric-datagen": [
+			"com.gold2.Gold2DataGenerator"
+		]
+	},
+	"mixins": [
+		"gold2.mixins.json",
+		{
+			"config": "gold2.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.3",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
